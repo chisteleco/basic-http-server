@@ -1,0 +1,23 @@
+{
+  "name": "basic_http_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chisteleco/basic-http-server.git"
+  },
+  "author": "DGM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chisteleco/basic-http-server/issues"
+  },
+  "homepage": "https://github.com/chisteleco/basic-http-server#readme"
+}
