@@ -10,7 +10,6 @@ app.get('/', function(req, res) {
 });
 
 
-
 //LAUNCH LISTENING
 app.listen(3000, function() {
   console.log('Aplicación ejemplo, escuchando el puerto 3000!');
