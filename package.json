@@ -2,7 +2,7 @@
   "name": "basic_http_server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/index.js",
   "dependencies": {
     "express": "^4.17.1"
   },
@@ -11,7 +11,8 @@
     "mocha": "^9.1.0"
   },
   "scripts": {
-    "test": "echo \" Running tests!! (joking ;))\""
+    "start": "node app/index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
