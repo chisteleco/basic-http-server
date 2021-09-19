@@ -1,8 +1,8 @@
 
 let express = require('express');
 let app = express();
-
-
+let dbMgr= require('./FireBaseMgr/databaseConnector/dbFunctions.js');
+let firebase= require('./FirebaseMgr/config.js');
 //API REST METHODS
 app.get('/', function(req, res) {
   res.send('Hola Mundo!');
@@ -15,8 +15,11 @@ app.get('/', function(req, res) {
 //var homeRoutes = require('./routes/homeRoutes');
 //app.use('/home', homeRoutes);
 
+firebase.initdb();
+
 createRoutes(app);
 
+dbMgr.initDB();
 
 //LAUNCH LISTENING
 app.listen(3000, function() {
