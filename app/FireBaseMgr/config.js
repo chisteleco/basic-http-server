@@ -6,35 +6,33 @@ module.exports.initdb=async ()=>{
  const firebaseConfig = require ('./homeserverDBConfig.json');
 // Initialize Firebase database
 
-admin.initializeApp({
-  credential: admin.credential.cert(firebaseConfig),
-  databaseURL: "https://databaseName.firebaseio.com"
-});
-
-
-//console.log(admin)
-
-var db = admin.firestore();
-
-/*
-const ref =  db.collection("HomeInfo").get().then((querySnapshot) => {
-		querySnapshot.forEach((doc) => {      
-		console.log(doc._fieldsProto.Address.stringValue);
-			}
-		)
-      }
-	);
-	*/
-	
-const ref =  await db.collection("HomeInfo").doc('HomeData').get()
-console.log(ref.data())
-		
-
-const ref2 =  await db.collection("HomeInfo").doc('Sensors').get()
-console.log(ref2.data())	
-		
-		
-		
+	admin.initializeApp({
+	  credential: admin.credential.cert(firebaseConfig),
+	  databaseURL: "https://databaseName.firebaseio.com"
+	});
 	
 }
 
+//function name:getAddress
+//input arguments:none
+//return value:none
+//logs: Home address
+module.exports.getAddress=async()=>{
+	var db = admin.firestore();
+	const ref =  await db.collection("HomeInfo").doc('HomeData').get()
+	//console.log(ref.data())
+	
+	return ref.data();
+}
+
+
+//function name:getSensorData
+//input arguments:none
+//return value:none
+//logs: Home Temperature
+module.exports.getSensorData=async()=>{
+	var db = admin.firestore();
+	const ref =  await db.collection("HomeInfo").doc('Sensors').get()
+	console.log(ref.data())
+	return ref.data();
+}

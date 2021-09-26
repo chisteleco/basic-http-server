@@ -1,18 +1,24 @@
+let firebase= require('../config.js');
+
+
 module.exports.initDB=()=> {
 
 
 console.log('Initializing database in firebase')
+firebase.initdb();
 
-//const admin = require('firebase-admin');
+}
 
+module.exports.getAddress=async()=>{
+	
+	let data= await firebase.getAddress();
+	return data;
+}
 
-//const serviceAccount = require('./path/to/serviceAccountKey.json');
-
-//admin.initializeApp({
- // credential: admin.credential.cert(serviceAccount)
-//});
-
-//const db = admin.firestore();
+module.exports.getSensorData=async ()=>{
+	
+	let data = await firebase.getSensorData();
+	return data;
 }
 
 module.exports.closingDB=()=> {
