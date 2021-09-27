@@ -9,7 +9,7 @@ firebase.initdb();
 
 }
 
-module.exports.getAddress=async()=>{
+module.exports.getHomeData=async()=>{
 	
 	let data= await firebase.getAddress();
 	return data;
