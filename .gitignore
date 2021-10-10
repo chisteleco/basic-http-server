@@ -104,3 +104,6 @@ dist
 .tern-port
 
 mochawesome-report/
+
+#visual studio
+.vs/
