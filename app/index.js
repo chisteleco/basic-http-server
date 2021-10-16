@@ -22,7 +22,7 @@ createRoutes(app);
 
 
 //LAUNCH LISTENING
-app.listen(webPort, function() {
+app.listen(process.env.PORT || webPort, function() {
   console.log('Webserver launched, listening on port '+webPort+' !');
 });
 
