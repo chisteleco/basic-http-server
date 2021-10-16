@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 let admin = require('firebase-admin');
-
+module.exports.admin=admin;
 module.exports.initdb=async ()=>{
 
  const firebaseConfig = require ('./homeserverDBConfig.json');

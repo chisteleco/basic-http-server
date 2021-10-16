@@ -12,11 +12,14 @@ app.get('/', function(req, res) {
   res.send('Hola Mundo!');
 });
 
-//create routes
-createRoutes(app);
 
 //initialize database manager
 dbMgr.initDB();
+
+//create routes
+createRoutes(app);
+
+
 
 //LAUNCH LISTENING
 app.listen(webPort, function() {
