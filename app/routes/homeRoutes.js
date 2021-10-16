@@ -5,8 +5,8 @@ let dbHome = require('../FireBaseMgr/databaseConnector/dbHome.js');
 let auth= require('../FireBaseMgr/authentication/authMgr.js');
 // define the home page route
 router.get('/', function(req, res) {
-	auth.signIn(auth,'testnode@gmail.com','testnode');
-	console.log(auth.currentUser);
+	//auth.signIn(auth,'testnode@gmail.com','testnode');
+	//console.log(auth.currentUser);
   res.send('Casa home page');
 });
 // define the about route
