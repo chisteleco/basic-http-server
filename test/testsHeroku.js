@@ -6,9 +6,9 @@ let expect = chai.expect();
 let request = chai.request();
 
 
-describe('HTTP Comms 2: ',()=>{
+describe('Heroku basic init test: ',()=>{
  it('should initialize web page', (done) => {
- chai.request("http://localhost:3000")
+ chai.request("https://http-server-home.herokuapp.com")
  .get('/')
  .end( function(err,res){
  console.log(res.body)
@@ -24,7 +24,7 @@ describe('HTTP Comms 2: ',()=>{
 
 describe('Home Comms: ', () => {
     it('should initialize home', (done) => {
-        chai.request("http://localhost:3000/home")
+        chai.request("https://http-server-home.herokuapp.com/home")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -34,7 +34,7 @@ describe('Home Comms: ', () => {
     });
 
     it('should initialize about', (done) => {
-        chai.request("http://localhost:3000/home/about")
+        chai.request("https://http-server-home.herokuapp.com/home/about")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -44,7 +44,7 @@ describe('Home Comms: ', () => {
     });
 
     it('should initialize info', (done) => {
-        chai.request("http://localhost:3000/home/info")
+        chai.request("https://http-server-home.herokuapp.com/home/info")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -55,7 +55,7 @@ describe('Home Comms: ', () => {
     });
 
     it('should publish home address', (done) => {
-        chai.request("http://localhost:3000/home/info")
+        chai.request("https://http-server-home.herokuapp.com/home/info")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -75,7 +75,7 @@ describe('Home Comms: ', () => {
 
 describe('pool Comms: ', () => {
     it('should initialize pool', (done) => {
-        chai.request("http://localhost:3000/pool")
+        chai.request("https://http-server-home.herokuapp.com/pool")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -85,7 +85,7 @@ describe('pool Comms: ', () => {
     });
 
     it('should initialize about', (done) => {
-        chai.request("http://localhost:3000/pool/about")
+        chai.request("https://http-server-home.herokuapp.com/pool/about")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -95,7 +95,7 @@ describe('pool Comms: ', () => {
     });
 
     it('should initialize info', (done) => {
-        chai.request("http://localhost:3000/pool/info")
+        chai.request("https://http-server-home.herokuapp.com/pool/info")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -110,7 +110,7 @@ describe('pool Comms: ', () => {
 
 describe('Garden Comms: ', () => {
     it('should initialize home', (done) => {
-        chai.request("http://localhost:3000/garden")
+        chai.request("https://http-server-home.herokuapp.com/garden")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -120,7 +120,7 @@ describe('Garden Comms: ', () => {
     });
 
     it('should initialize about', (done) => {
-        chai.request("http://localhost:3000/garden/about")
+        chai.request("https://http-server-home.herokuapp.com/garden/about")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)
@@ -130,7 +130,7 @@ describe('Garden Comms: ', () => {
     });
 
     it('should initialize info', (done) => {
-        chai.request("http://localhost:3000/garden/info")
+        chai.request("https://http-server-home.herokuapp.com/garden/info")
             .get('/')
             .end(function (err, res) {
                 console.log(res.body)

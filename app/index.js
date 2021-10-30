@@ -2,14 +2,22 @@
 let express = require('express');
 let app = express();
 let dbMgr= require('./FireBaseMgr/databaseConnector/dbFunctions.js');
-//let firebase= require('./FirebaseMgr/config.js');
+//Winston logger section 
+var winston = require('./config/winston');
+
 
 const webPort=3000;
 
+//logger configuration. Using morgan with winston
+let morgan=require('morgan')
+app.use(morgan('tiny', { stream: winston.stream }));
+
 
 //API REST METHODS
-app.get('/', function(req, res) {
-  res.send('Hola Mundo!');
+app.get('/', function (req, res) {
+    winston.info('Received data');
+    winston.debug('Mensaje de prueba debug')
+    res.send('Hola Mundo!');
 });
 
 
