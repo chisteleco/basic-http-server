@@ -8,7 +8,8 @@
     "express": "^4.17.1",
     "firebase": "^9.0.2",
     "firebase-admin": "^9.11.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "app-root-path": "^3.0.0",
