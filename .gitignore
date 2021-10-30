@@ -106,4 +106,5 @@ dist
 mochawesome-report/
 
 #visual studio
-.vs/
+
+.vs/slnx.sqlite
