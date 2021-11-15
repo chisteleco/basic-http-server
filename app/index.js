@@ -24,7 +24,7 @@ app.use(morgan('tiny', { stream: winston.stream }));
 app.get('/', function (req, res) {
     winston.info('Received data');
     winston.debug('Mensaje de prueba debug')
-    res.sendFile(path.join(__dirname,'client','public','index.html'))
+    res.sendFile(path.join(__dirname,'client','build','index.html'))
 });
 
 
