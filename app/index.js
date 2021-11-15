@@ -11,7 +11,7 @@ const path= require('path')
 
 app.use(express.static(path.join(__dirname,'client','build')))
 app.use(express.static(path.join(__dirname, 'client')))
-app.use(express.static(path.join(__dirname, 'client')))
+
 
 const webPort=3000;
 
@@ -24,7 +24,7 @@ app.use(morgan('tiny', { stream: winston.stream }));
 app.get('/', function (req, res) {
     winston.info('Received data');
     winston.debug('Mensaje de prueba debug')
-    res.sendFile(path.join(__dirname,'build','index.html'))
+    res.sendFile(path.join(__dirname,'client','build','index.html'))
 });
 
 
