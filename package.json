@@ -5,6 +5,7 @@
   "main": "app/index.js",
   "dependencies": {
     "app-root-path": "^3.0.0",
+    "create-react-app": "^4.0.3",
     "express": "^4.17.1",
     "firebase": "^9.0.2",
     "firebase-admin": "^9.11.1",

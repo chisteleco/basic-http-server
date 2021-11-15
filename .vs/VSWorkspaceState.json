@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app\\DeviceManager",
-    "\\app\\FireBaseMgr",
-    "\\app\\FireBaseMgr\\databaseConnector",
-    "\\app\\routes"
+    "\\app",
+    "\\app\\client\\public"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
