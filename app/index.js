@@ -5,6 +5,13 @@ let dbMgr= require('./FireBaseMgr/databaseConnector/dbFunctions.js');
 //Winston logger section 
 var winston = require('./config/winston');
 
+const path= require('path')
+
+//serve client app
+
+app.use(express.static(path.join(__dirname,'client','build')))
+app.use(express.static(path.join(__dirname, 'client')))
+app.use(express.static(path.join(__dirname, 'client')))
 
 const webPort=3000;
 
@@ -17,7 +24,7 @@ app.use(morgan('tiny', { stream: winston.stream }));
 app.get('/', function (req, res) {
     winston.info('Received data');
     winston.debug('Mensaje de prueba debug')
-    res.send('Hola Mundo!');
+    res.sendFile(path.join(__dirname,'build','index.html'))
 });
 
 
@@ -52,6 +59,8 @@ function createRoutes(app) {
 
     //loading security routes
     app.use('/security', mapRoutes["security"]);
+
+    app.use('/dec', mapRoutes["dec"])
 //end routes section
 
 }

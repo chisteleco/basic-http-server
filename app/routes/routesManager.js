@@ -5,12 +5,14 @@ module.exports=function () {
         let poolRoutes = require('./poolRoutes');
         let securityRoutes = require('./securityRoutes');
 
+        let decRoutes = require('./decRoutes');
 
         let routes = {
             home: homeRoutes,
             garden: gardenRoutes,
             pool: poolRoutes,
-            security: securityRoutes
+            security: securityRoutes,
+            dec: decRoutes
         };
 
         return routes;
