@@ -21,7 +21,7 @@ router.get('/', function (req, res) {
             res.json({ 'msg': '\u00BFRecuerdas c\u00F3mo se llamaba?', 'img': '/Images/3.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
             break;
         case 'Dec 5 2021':
-            res.json({ 'msg': 'Hoy has ganado..... un masaje!!', 'img': '/Images/4.jpg', 'color': 'DarkGoldenRod'});
+            res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod'});
             break;
         case 'Dec 6 2021':
             res.json({ 'msg': 'Hoy has ganado..... un masaje!!', 'img': '/Images/10.gif', 'color': 'DarkGoldenRod' });
@@ -77,7 +77,8 @@ router.get('/', function (req, res) {
         case 'Dec 31 2021':
             break;
         default:
-            res.json({ 'msg': 'Cumpleaños feliz!!!Cumpleaños feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
+            //res.json({ 'msg': 'Cumplea\361os feliz!!!Cumplea\361os feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
+            res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod' });
             break;
 
 
