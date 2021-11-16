@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
             res.json({ 'msg': 'Feliz cumplea\361os!', 'color': 'lightyellow', 'secret': 'Busca debajo de la cama' });
             break;
         case 'Dec 4 2021':
-            res.json({ 'msg': '\u00BFRecuerdas c\u00F3mo se llamaba?', 'img': '/Images/3.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
+            res.json({ 'msg': '\u00BFRecuerdas c\u00F3mo se llamaba?', 'img': '/Images/Caballos.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/poni.mp3' });
             break;
         case 'Dec 5 2021':
             res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod'});
@@ -78,7 +78,8 @@ router.get('/', function (req, res) {
             break;
         default:
             //res.json({ 'msg': 'Cumplea\361os feliz!!!Cumplea\361os feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
-            res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod' });
+//            res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod' });
+            res.json({ 'msg': 'Lo importante en la vida es aprender a tomar las riendas , elegir el camino, y disfrutar el paisaje', 'img': '/Images/Caballos.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/poni.mp3' });
             break;
 
 
