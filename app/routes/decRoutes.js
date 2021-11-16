@@ -11,14 +11,11 @@ router.get('/', function (req, res) {
 
     switch (date) {
 
-        case 'Nov 15 2021':
-            res.json({ 'msg': 'Cumpleaños feliz!!!Cumpleaños feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
-            break;
         case 'Dec 3 2021':
-            res.json({ 'msg': 'Feliz cumplea\361os!', 'color': 'lightyellow', 'secret': 'Busca debajo de la cama' });
+            res.json({ 'msg': 'Cumplea\361os feliz!!!Cumplea\361os feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
             break;
         case 'Dec 4 2021':
-            res.json({ 'msg': '\u00BFRecuerdas c\u00F3mo se llamaba?', 'img': '/Images/Caballos.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/poni.mp3' });
+            res.json({ 'msg': 'Lo importante en la vida es aprender a tomar las riendas , elegir el camino, y disfrutar el paisaje', 'img': '/Images/caballos.jpg', 'color': 'bisque', 'secret': 'ponte ropa cómoda!', 'otherFile': '/OtherFiles/poni.mp3' });
             break;
         case 'Dec 5 2021':
             res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod'});
@@ -27,12 +24,14 @@ router.get('/', function (req, res) {
             res.json({ 'msg': 'Hoy has ganado..... un masaje!!', 'img': '/Images/10.gif', 'color': 'DarkGoldenRod' });
             break;
         case 'Dec 7 2021':
+            res.json({ 'img': '/Images/gelieg.png', 'color': 'black' });
             break;
         case 'Dec 8 2021':
             break;
         case 'Dec 9 2021':
             break;
         case 'Dec 10 2021':
+            res.json({ 'msg': 'Hoy me toca a mi!! Pero qué feliz soy de poder celebrarlo a tu lado :) ', 'img': '/Images/9.jpg', 'color': 'DarkGoldenRod' });
             break;
         case 'Dec 11 2021':
             break;
@@ -45,6 +44,7 @@ router.get('/', function (req, res) {
         case 'Dec 15 2021':
             break;
         case 'Dec 16 2021':
+            res.json({ 'msg': 'Hoy toca, vacaciones navideñas! viva!!', 'img': '/Images/alsacia.jpg', 'color': 'DarkGoldenRod' });
             break;
         case 'Dec 17 2021':
             break;
@@ -79,7 +79,9 @@ router.get('/', function (req, res) {
         default:
             //res.json({ 'msg': 'Cumplea\361os feliz!!!Cumplea\361os feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
 //            res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod' });
-            res.json({ 'msg': 'Lo importante en la vida es aprender a tomar las riendas , elegir el camino, y disfrutar el paisaje', 'img': '/Images/Caballos.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/poni.mp3' });
+            //res.json({ 'msg': 'Hoy me toca a mi!! Pero qué feliz soy de poder celebrarlo a tu lado :) ', 'img': '/Images/9.jpg', 'color': 'DarkGoldenRod' });
+            //res.json({ 'msg': 'Lo importante en la vida es aprender a tomar las riendas , elegir el camino, y disfrutar el paisaje', 'img': '/Images/caballos.jpg', 'color': 'bisque', 'secret': 'ponte ropa cómoda!', 'otherFile': '/OtherFiles/poni.mp3' });
+            res.json({ 'img': '/Images/gelieg.png', 'color': 'black' });
             break;
 
 
