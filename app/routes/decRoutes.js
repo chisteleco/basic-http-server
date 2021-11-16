@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
     switch (date) {
 
         case 'Nov 15 2021':
-            res.json({ 'msg': '\u00BFRecuerdas c\u00F3mo se llamaba?', 'img': '/Images/10.gif', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
+            res.json({ 'msg': 'Cumpleaños feliz!!!Cumpleaños feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
             break;
         case 'Dec 3 2021':
             res.json({ 'msg': 'Feliz cumplea\361os!', 'color': 'lightyellow', 'secret': 'Busca debajo de la cama' });
@@ -77,7 +77,7 @@ router.get('/', function (req, res) {
         case 'Dec 31 2021':
             break;
         default:
-            res.send('Parece que no hay nada para ti');
+            res.json({ 'msg': 'Cumpleaños feliz!!!Cumpleaños feliz!!!', 'img': '/Images/30.jpg', 'color': 'bisque', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
             break;
 
 

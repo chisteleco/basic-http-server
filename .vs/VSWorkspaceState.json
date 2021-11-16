@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\client\\public"
+    "\\app\\client"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\app\\client\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
