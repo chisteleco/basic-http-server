@@ -12,25 +12,25 @@ router.get('/', function (req, res) {
 
     switch (date) {
 
-        case 'Dec 3 2021'://pista sakale debajo de la cama
+        case 'Dec 03 2021'://pista sakale debajo de la cama
             res.json({ 'msg': 'Cumplea\361os feliz!!!Cumplea\361os feliz!!!', 'img': '/Images/30.jpg', 'color': 'lightgreen', 'secret': 'Busca debajo de la cama', 'otherFile': '/OtherFiles/grabacion.aac' });
             break;
-        case 'Dec 4 2021'://caballitos
+        case 'Dec 04 2021'://caballitos
             res.json({ 'msg': 'Lo importante en la vida es aprender a tomar las riendas , elegir el camino, y disfrutar el paisaje', 'img': '/Images/caballos.jpg', 'color': 'bisque', 'secret': 'ponte ropa c\u00F3moda!', 'otherFile': '/OtherFiles/poni.mp3' });
             break;
-        case 'Dec 5 2021'://churros
+        case 'Dec 05 2021'://churros
             res.json({ 'msg': 'Hoy toca..... churros!!', 'img': '/Images/churros.jpg', 'color': 'DarkGoldenRod', 'secret': 'churros para mi churri ^^'});
             break;
-        case 'Dec 6 2021': //masaje
+        case 'Dec 06 2021': //masaje
             res.json({ 'msg': 'Hoy has ganado..... un masaje!!', 'img': '/Images/10.gif', 'color': 'DarkGoldenRod' });
             break;
-        case 'Dec 7 2021': //pista detrás de halcón
+        case 'Dec 07 2021': //pista detrás de halcón
             res.json({ 'img': '/Images/gelieg.png', 'color': 'black' });
             break;
-        case 'Dec 8 2021'://TODO
+        case 'Dec 08 2021'://TODO
             res.json({ 'msg':'Hoy es 8!','color':'blue'});
             break;
-        case 'Dec 9 2021': //piruletas!
+        case 'Dec 09 2021': //piruletas!
             res.json({ 'msg':'Te acuerdas? :)','img':'/Images/piruletas.jfif','color': 'lightblue', 'secret':'Hay 5 escondidas por la casa. Dulce b\u00F9squeda!!!'});
             break;
         case 'Dec 10 2021'://mi cumple
